@@ -1,9 +1,27 @@
 {
     "version": 1,
     "canisters": {
-        "icrc1": {
-            "type": "motoko",
-            "main": "src/ICRC1/Canisters/Token.mo"
+        "internet_identity": {
+            "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+            "frontend": {},
+            "remote": {
+                "id": {
+                    "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+                }
+            },
+            "type": "custom",
+            "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
+        },
+        "front": {
+            "dependencies": [],
+            "frontend": {
+                "entrypoint": "frontend/dist/index.html"
+            },
+            "source": [
+                "dist/assets",
+                "dist"
+            ],
+            "type": "assets"
         }
     },
     "defaults": {

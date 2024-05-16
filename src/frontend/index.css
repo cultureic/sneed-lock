@@ -1,0 +1,99 @@
+/* Improve box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Font */
+@font-face {
+  font-family: 'Bruno Ace';
+  src: url('assets/font/BrunoAce-Regular.ttf') format('truetype');
+  /* You can add other font properties here if needed, like font-weight, font-style, etc. */
+}
+
+/* Body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Bruno Ace', sans-serif;
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  background-color: black;
+}
+
+.sneed-page {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+.code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #131212;
+  padding: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Base styles */
+.sneed-banner {
+  width: 80%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .sneed-banner {
+    width: 100%; /* Set to full width on smaller screens */
+  }
+}
+
+header {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
